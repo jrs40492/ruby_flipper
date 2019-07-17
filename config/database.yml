@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: ruby_flipper_production
+  username: ruby_flipper
+  password: <%= ENV['RUBY_FLIPPER_DATABASE_PASSWORD'] %>
