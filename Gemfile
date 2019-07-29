@@ -10,6 +10,8 @@ gem 'bcrypt', '~> 3.1.13'
 gem 'faker', '~> 1.9', '>= 1.9.6'
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 gem 'bootstrap-will_paginate', '~> 1.0'
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'mini_magick', '~> 4.9', '>= 4.9.5'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -70,6 +72,7 @@ end
 
 group :production do
   gem 'pg', '1.1.4'
+  gem 'fog', '~> 2.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
